@@ -40,3 +40,13 @@ drop database if exists db_name;
 
 show databases;
 show table;
+
+
+# select keyword in mysql
+
+select * from table_name;    
+select distinct col_name from table_name;    (gives distinct values from table only)
+
+# where clause in mysql (more like a condition)
+
+select city from city_column where city = 'pokhara'
