@@ -50,3 +50,11 @@ select distinct col_name from table_name;    (gives distinct values from table o
 # where clause in mysql (more like a condition)
 
 select city from city_column where city = 'pokhara'
+
+# to turn off safe mode in sql
+
+set sql_safe_updates = 0
+
+# to update table
+
+update table_name set col1 = val1, col2 = val2 where condition;
