@@ -58,3 +58,21 @@ set sql_safe_updates = 0
 # to update table
 
 update table_name set col1 = val1, col2 = val2 where condition;
+
+# Alter the table (to change schema)
+
+# to add column
+
+alter table table_name add column column_name datatype constraint ;
+
+# to drop column
+
+alter table table_name drop column column_name;
+
+# to rename table
+
+alter table table_name rename to new_table_name;
+
+# to rename a column
+
+alter table table_name change column old_name new_name new_datatype new_constraint;
