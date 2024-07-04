@@ -76,3 +76,11 @@ alter table table_name rename to new_table_name;
 # to rename a column
 
 alter table table_name change column old_name new_name new_datatype new_constraint;
+
+# to modify a column
+
+alter table table_name modify column_name new_datatype new_constraint;
+
+# drop deletes the whole table whereas truncate deletes the table data
+
+truncate table table_name;
