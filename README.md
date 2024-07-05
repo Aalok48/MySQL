@@ -83,4 +83,4 @@ alter table table_name modify column_name new_datatype new_constraint;
 
 # drop deletes the whole table whereas truncate deletes the table data
 
-truncate table table_name;
+truncate table table_name; this deletes only the table data 
