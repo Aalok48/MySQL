@@ -84,3 +84,20 @@ alter table table_name modify column_name new_datatype new_constraint;
 # drop deletes the whole table whereas truncate deletes the table data
 
 truncate table table_name; this deletes only the table data 
+
+# joins in mysql
+
+joins are used to combine rows from two or more than two tables based on a related columns between them
+types of join:- 1.inner join 2.left join 3.right join 4.full join
+
+# inner join 
+return records that have matching values in both the tables
+select column(s) from tableA inner join tableB on tableA.column_name = tableB.column_name
+
+# left join
+return all the records from the left table and matched record from the right table
+select column(s) from tableA(left table) left join tableB(right table) on tableA.column_name = tableB.column_name
+
+# right join
+return all the records from the right table and matched record from the left table
+select column(s) from tableA(left table) right join tableB(right table) on tableA.column_name = tableB.column_name
