@@ -101,3 +101,19 @@ select column(s) from tableA(left table) left join tableB(right table) on tableA
 # right join
 return all the records from the right table and matched record from the left table
 select column(s) from tableA(left table) right join tableB(right table) on tableA.column_name = tableB.column_name
+
+# self join
+a type of inner join where the table is joined with itself
+select column(s) from table_name as a join table_name as b on a.col_name = b.col_name;
+
+# union
+it is used to combine the result of two select items 
+result is unique means no dublicate values but to get dublicate values too use union all
+to use it:
+    1. every select should have same number of columns
+    2. every column should have same datatype
+    3 columns in every select should be in same order
+
+select column(s) from tableA
+union 
+select columns(s) from tableB
