@@ -117,3 +117,12 @@ to use it:
 select column(s) from tableA
 union 
 select columns(s) from tableB
+
+# views in mysql
+a view is a virtual table based on the result-set of an sql statement
+
+create view view1
+select rollno, name from student;
+
+# delete a view
+drop view view1
